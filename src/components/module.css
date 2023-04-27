@@ -1,0 +1,912 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Установка базового шрифта */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Удаление стандартного поведения ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Очистка списка */
+ul {
+  list-style: none;
+}
+
+/* Section */
+
+.section {
+  padding: 50px 0;
+}
+.section--intro {
+  padding: 80px 0;
+}
+.section--mint {
+  background-color: #d5fafc;
+}
+.section--seafoam {
+  background-color: #1db5be;
+}
+
+/*container*/
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* wrapper */
+
+.wrapper {
+  background-image: url("assets/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 866px;
+}
+header {
+  width: 100%;
+  padding-top: 30px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+.logo {
+  width: 128px;
+  height: 32px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+a.nav__link--black {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+
+  /* Body sm / SemiBold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.inner-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+/*intro*/
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 96px 48px 0px 0px;
+  gap: 32px;
+}
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+.title {
+  /* Display xl/Bold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  /* or 120% */
+
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.description-hero {
+  /* Body lg/Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  /* or 156% */
+
+  font-feature-settings: "liga" off;
+
+  color: #374151;
+}
+.cta {
+  /* CTAs */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 333px;
+  height: 56px;
+}
+.button-get {
+  /* Button */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 50%;
+  height: 100%;
+
+  background: #7c3aed;
+  border-radius: 8px;
+  border-color: transparent;
+
+  /* _Button base */
+
+  padding: 16px 24px;
+
+  /* Body md/SemiBold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 156%;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  font-feature-settings: "liga" off;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.button-watch {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 8px;
+
+  width: 55%;
+  height: 150%;
+
+  border-radius: 8px;
+  border-color: transparent;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  /* Body md/SemiBold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  font-feature-settings: "liga" off;
+
+  color: #7c3aed;
+}
+.button-watch img {
+  width: 24px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.intro-mockup {
+  /* Phone Mockup */
+
+  width: 488px;
+  height: 640px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+/*client logo*/
+.client-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+.divider-top,
+.divider-bottom {
+  width: 1216px;
+  height: 1px;
+
+  background: #e5e7eb;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px;
+  gap: 64px;
+}
+
+/*feature*/
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 112px;
+  gap: 64px;
+
+  background: #ffffff;
+}
+.heading-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.title-feature {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  /* identical to box height, or 125% */
+
+  text-align: center;
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.description-feature {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  /* or 156% */
+
+  text-align: center;
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 64px;
+}
+.row-one,
+.row-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 1212px;
+  height: 152px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+
+  width: 384px;
+  height: 152px;
+}
+.icon-card {
+  width: 32px;
+  height: 32px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 8px;
+
+  width: 384px;
+  height: 96px;
+}
+.headline {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 133%;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 150% */
+
+  text-align: center;
+  font-feature-settings: "liga" off;
+
+  color: #374151;
+}
+
+/*testimonial*/
+
+.testimonial {
+  display: flex;
+  padding: 50px;
+}
+.qoute {
+  position: absolute;
+  width: 142px;
+  height: 116px;
+
+  opacity: 0.3;
+}
+.section-hedding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.title-testimonial {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  /* or 125% */
+
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.discription {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  /* identical to box height, or 156% */
+
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.client-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  margin: 64px;
+  gap: 32px;
+
+  background: #ffffff;
+  /* Shadow md */
+
+  box-shadow: 0px 4px 8px -2px rgba(17, 24, 39, 0.1),
+    0px 2px 4px -2px rgba(17, 24, 39, 0.06);
+  border-radius: 8px;
+}
+.profile-logo {
+  width: 112px;
+  height: 32px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+.graphic {
+  width: 16px;
+  height: 13px;
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.feedback-block {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  /* or 156% */
+
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.person-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 288px;
+  height: 48px;
+}
+.client-name {
+  width: 288px;
+  height: 28px;
+
+  /* Body lg / Bold */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 156%;
+  /* identical to box height, or 156% */
+
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.client-position {
+  width: 288px;
+  height: 20px;
+
+  /* Body sm / Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "liga" off;
+
+  color: #6b7280;
+}
+
+/*metrics*/
+
+.metrics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+
+  background: #ffffff;
+}
+.section-hedding {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.metrics-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+.row-first,
+.row-second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 280px;
+  height: 69px;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+}
+.metrics-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.numbers {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 125%;
+  /* identical to box height, or 125% */
+
+  letter-spacing: -0.025em;
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.details {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 150% */
+
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+
+/*logo-clouds*/
+
+.logo-clouds {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #ffffff;
+}
+.divider-cloud {
+  position: relative;
+  bottom: -12px;
+  width: 1216px;
+  height: 1px;
+  background: #e5e7eb;
+}
+.cloud-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+.section-hedding-cloud {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 0px;
+  gap: 8px;
+}
+.cloud-container {
+  background-image: url("assets/Vector.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.cloud-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 64px;
+}
+.cloud-row-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
+}
+.cloud-item {
+  filter: drop-shadow(0px 10px 20px rgba(41, 41, 42, 0.07));
+}
+.cloud-row-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 64px;
+}
+
+/*CTA`s*/
+.ctas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  padding: 52px 0 44px 0;
+}
+.content-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.section-hedding-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.get-app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+
+.get-app-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  /* identical to box height, or 156% */
+
+  font-feature-settings: "liga" off;
+
+  color: #111827;
+}
+.cta-img {
+  display: flex;
+}
+.phone-moc-one {
+  position: relative;
+  left: 32px;
+  top: -52px;
+}
+.phone-moc-two {
+  position: relative;
+  right: 0px;
+  bottom: -95px;
+}
+
+/*footer*/
+.basement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 50px;
+  gap: 556px;
+}
+.footer {
+  background: #000000;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+}
+.logomark {
+  width: 32px;
+  height: 32px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+.links-row-one,
+.links-row-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+.nav__link {
+  /* Body md / Regular */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 150% */
+
+  font-feature-settings: "liga" off;
+
+  color: #ffffff;
+}
+.download-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+.copyright-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  /* identical to box height, or 143% */
+
+  font-feature-settings: "liga" off;
+
+  color: #d1d5db;
+}
+.app-get {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  /* identical to box height, or 156% */
+
+  font-feature-settings: "liga" off;
+
+  color: #d1d5db;
+}
+.store-badges {
+  display: flex;
+}

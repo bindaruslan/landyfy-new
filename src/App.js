@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+/* jshint esversion: 6 */
+
+import React from "react";
+import Header from "./components/Header";
+import Intro from "./components/Intro";
+import ClientLogo from "./components/ClientLogo";
+import Feature from "./components/Feature";
+import Testimonial from "./components/Testimonial.js";
+import Metrics from "./components/Metrics";
+import LogoClouds from "./components/LogoClouds";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Intro />
+      <ClientLogo />
+      <Feature />
+      <Testimonial />
+      <Metrics />
+      <LogoClouds />
+      <CTA />
+      <Footer />
     </div>
   );
 }
